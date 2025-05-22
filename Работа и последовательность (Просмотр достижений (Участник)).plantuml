@@ -1,0 +1,21 @@
+@startuml
+
+title Просмотр достижений (Участник)
+
+actor "Участник" as Member
+participant "Система" as System
+database "База данных" as DB
+
+Member -> System: Авторизация
+System -> DB: Проверка учетных данных
+DB --> System: Подтверждение
+Member -> System: Запрос раздела "Достижения"
+System -> DB: Получение данных (соревнования, баллы)
+DB --> System: Информация
+System -> Member: Отображение таблицы и наград
+Member -> System: Фильтрация по дате/типу
+System -> DB: Уточнённый запрос
+DB --> System: Результаты
+System -> Member: Обновлённый вид
+
+@enduml

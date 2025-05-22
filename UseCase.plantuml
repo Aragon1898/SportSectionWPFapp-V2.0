@@ -1,0 +1,32 @@
+@startuml
+
+left to right direction
+
+actor "Администратор" as admin
+actor "Тренер" as coach
+actor "Участник секции" as member
+
+rectangle "Система учёта спортивной секции" {
+    usecase "Регистрация нового участника" as UC1
+    usecase "Формирование отчёта" as UC2
+    usecase "Составление расписания" as UC3
+    usecase "Отметка посещаемости" as UC4
+    usecase "Просмотр расписания" as UC5
+    usecase "Просмотр достижений" as UC6
+    
+    admin --> UC1
+    admin --> UC2
+    admin --> UC5
+    coach --> UC3
+    coach --> UC4
+    coach --> UC5
+    member --> UC5
+    member --> UC6
+    
+    UC3 .> UC4 : включает
+    UC1 ..> UC3 : данные для\nраспределения
+    UC4 ..> UC2 : данные для\nстатистики
+    UC6 ..> UC2 : данные для\nаналитики
+}
+
+@enduml
