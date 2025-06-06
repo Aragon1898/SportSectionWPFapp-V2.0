@@ -1,0 +1,22 @@
+@startuml
+
+title Регистрация нового участника (Администратор)
+
+actor "Администратор" as Admin
+participant "Система" as System
+database "База данных" as DB
+
+Admin -> System: Запуск регистрации
+System -> Admin: Отображение формы анкеты
+Admin -> System: Ввод данных участника
+System -> DB: Проверка уникальности данных
+DB --> System: Подтверждение
+System -> DB: Сохранение анкеты
+DB --> System: ID нового участника
+System -> Admin: Уведомление об успешной регистрации
+Admin --> System: Назначение секции/тренера
+System -> DB: Обновление данных участника
+DB --> System: Подтверждение
+System -> Admin: Фиксация завершения
+
+@enduml

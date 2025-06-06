@@ -1,0 +1,85 @@
+@startuml
+
+' Настройка внешнего вида
+hide circle
+skinparam classAttributeIconSize 0
+
+' Таблица Users
+class Users {
+  +int Id
+  +varchar Name
+  +varchar Email
+  +varchar Password
+}
+
+' Таблица Admins
+class Admins {
+  +int Id
+  +int UserId
+}
+
+' Таблица Coaches
+class Coaches {
+  +int Id
+  +int UserId
+}
+
+' Таблица Members
+class Members {
+  +int Id
+  +int UserId
+}
+
+' Таблица Sections
+class Sections {
+  +int Id
+  +varchar Name
+  +int CoachId
+  +int ScheduleId
+}
+
+' Таблица Schedules
+class Schedules {
+  +int Id
+  +datetime StartTime
+  +datetime EndTime
+}
+
+' Таблица SectionMember
+class SectionMember {
+  +int SectionId
+  +int MemberId
+}
+
+' Таблица Attendances
+class Attendances {
+  +int Id
+  +datetime Date
+  +boolean IsPresent
+  +int MemberId
+}
+
+' Таблица Achievements
+class Achievements {
+  +int Id
+  +varchar CompetitionName
+  +varchar Points
+  +varchar Awards
+  +int MemberId
+}
+
+' Связи между таблицами
+Admins --> Users : UserId
+Coaches --> Users : UserId
+Members --> Users : UserId
+
+Sections --> Coaches : CoachId
+Sections --> Schedules : ScheduleId
+
+SectionMember --> Sections : SectionId
+SectionMember --> Members : MemberId
+
+Attendances --> Members : MemberId
+Achievements --> Members : MemberId
+
+@enduml
