@@ -1,0 +1,53 @@
+﻿<Window x:Class="SportSectionWPF2.View.Windows.WindowForAdminView.AddScheduleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SportSectionWPF2.View.Windows.WindowForAdminView"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="AddScheduleWindow" Height="250" Width="400">
+    <Canvas>
+        <Button Content="Вернуться"
+                Margin="15"
+                Background="Green"
+                Foreground="White"
+                Click="CloseWindowButton_Click"/>
+
+        <TextBlock Text="Дата начала секции" HorizontalAlignment="Left" Canvas.Left="60" Canvas.Top="50" VerticalAlignment="Center"/>
+
+        <DatePicker Name="StartDate"
+                    DisplayDateStart="{x:Static System:DateTime.Today}" 
+                    Margin="65,80"/>
+
+        <TextBlock Text="Дата окончания секции" Canvas.Left="196" Canvas.Top="53"/>
+
+        <DatePicker Name="EndDate"
+                    DisplayDateStart="{x:Static System:DateTime.Today}"
+              Margin="205,80"/>
+
+
+        <TextBlock Text="Время окончания секции" RenderTransformOrigin="0.373,0.479" HorizontalAlignment="Left" Canvas.Left="191" Canvas.Top="120" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="EndingTimeTextBox"
+                 Width="132" Canvas.Left="195" Canvas.Top="141" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+        <TextBlock Text="Время Начала секции" RenderTransformOrigin="0.373,0.479" Canvas.Left="55" Canvas.Top="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+        <TextBox x:Name="BeginTimeTextBox"
+            Width="132" Canvas.Left="49" Canvas.Top="141" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <Button Content="Добавить"
+                Margin="220,180"
+                Width="100"
+                Foreground="White"
+                Background="Green"
+                Click="AddButton_Click"/>
+       
+
+
+
+    </Canvas>
+</Window>
