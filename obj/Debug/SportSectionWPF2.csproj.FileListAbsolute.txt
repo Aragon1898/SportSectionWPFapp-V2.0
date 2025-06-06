@@ -1,0 +1,118 @@
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\SportSectionWPF2.exe.config
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\SportSectionWPF2.exe
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\SportSectionWPF2.pdb
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.AssemblyReference.cache
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\MainWindow.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\App.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2_MarkupCompile.cache
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2_MarkupCompile.lref
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\MainWindow.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2.g.resources
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2.Properties.Resources.resources
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.GenerateResource.cache
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.CoreCompileInputs.cache
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2.exe
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2.pdb
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\EntityFramework.dll
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\EntityFramework.xml
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSec.8528F819.Up2Date
+C:\Users\User\Desktop\SportSectionWPF2\bin\Debug\SportSectionWPF2.exe.config
+C:\Users\User\Desktop\SportSectionWPF2\bin\Debug\SportSectionWPF2.exe
+C:\Users\User\Desktop\SportSectionWPF2\bin\Debug\SportSectionWPF2.pdb
+C:\Users\User\Desktop\SportSectionWPF2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\SportSectionWPF2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\SportSectionWPF2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\SportSectionWPF2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\SportSectionWPF2\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\Windows\LoginWindow.g.cs
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\Windows\AdminViewWindow.g.cs
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\Windows\CoachViewWindow.g.cs
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\Windows\MemberViewWindow.g.cs
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\App.g.cs
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2_Content.g.cs
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2_MarkupCompile.cache
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2_MarkupCompile.lref
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\Windows\LoginWindow.baml
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\Windows\AdminViewWindow.baml
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\Windows\CoachViewWindow.baml
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\Windows\MemberViewWindow.baml
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2.g.resources
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2.Properties.Resources.resources
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSec.8528F819.Up2Date
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2.exe
+C:\Users\User\Desktop\SportSectionWPF2\obj\Debug\SportSectionWPF2.pdb
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.AssemblyReference.cache
+E:\project C#\SportSectionWPF2\obj\Debug\MainWindow.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\App.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2_MarkupCompile.cache
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2_MarkupCompile.lref
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2.exe
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2.pdb
+E:\project C#\SportSectionWPF2\bin\Debug\SportSectionWPF2.exe.config
+E:\project C#\SportSectionWPF2\bin\Debug\SportSectionWPF2.exe
+E:\project C#\SportSectionWPF2\bin\Debug\SportSectionWPF2.pdb
+E:\project C#\SportSectionWPF2\bin\Debug\EntityFramework.dll
+E:\project C#\SportSectionWPF2\bin\Debug\EntityFramework.SqlServer.dll
+E:\project C#\SportSectionWPF2\bin\Debug\EntityFramework.xml
+E:\project C#\SportSectionWPF2\bin\Debug\EntityFramework.SqlServer.xml
+E:\project C#\SportSectionWPF2\obj\Debug\MainWindow.baml
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2.g.resources
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2.Properties.Resources.resources
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.GenerateResource.cache
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2.csproj.CoreCompileInputs.cache
+E:\project C#\SportSectionWPF2\obj\Debug\SportSec.8528F819.Up2Date
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\AdminViewWindow.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\AdminViewWindow.baml
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddSectionWindow.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddSectionWindow.baml
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\ChooseCoachForSection.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\ChooseCoachForSection.baml
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddScheduleWindow.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddScheduleWindow.baml
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddMemberWindow.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddMemberWindow.baml
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\CoachWindow.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\CoachWindow.baml
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\MemberWindow.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\MemberWindow.baml
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WIndowForMember.g.cs
+E:\project C#\SportSectionWPF2\obj\Debug\View\Windows\WIndowForMember.baml
+E:\project C#\SportSectionWPF2\bin\Debug\Castle.Core.dll
+E:\project C#\SportSectionWPF2\bin\Debug\Moq.dll
+E:\project C#\SportSectionWPF2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\project C#\SportSectionWPF2\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\project C#\SportSectionWPF2\bin\Debug\Castle.Core.xml
+E:\project C#\SportSectionWPF2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\project C#\SportSectionWPF2\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\project C#\SportSectionWPF2\obj\Debug\SportSectionWPF2.Migrations.init.resources
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\Castle.Core.dll
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\Moq.dll
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\Castle.Core.xml
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Толя\source\repos\SportSectionWPF2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\AdminViewWindow.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\CoachWindow.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddMemberWindow.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddScheduleWindow.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddSectionWindow.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\ChooseCoachForSection.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\MemberWindow.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WIndowForMember.g.cs
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\AdminViewWindow.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\CoachWindow.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddMemberWindow.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddScheduleWindow.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\AddSectionWindow.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\ChooseCoachForSection.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WindowForAdminView\MemberWindow.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\View\Windows\WIndowForMember.baml
+C:\Users\Толя\source\repos\SportSectionWPF2\obj\Debug\SportSectionWPF2.Migrations.inith.resources

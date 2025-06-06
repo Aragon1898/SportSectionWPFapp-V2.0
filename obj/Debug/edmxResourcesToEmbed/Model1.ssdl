@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ModelDB" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="achievements">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="member_id" Type="int" Nullable="false" />
+    <Property Name="competition_name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="points" Type="int" Nullable="false" />
+    <Property Name="awards" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="admins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="attendances">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="member_id" Type="int" Nullable="false" />
+    <Property Name="schedule_id" Type="int" Nullable="false" />
+    <Property Name="attendance_date" Type="date" Nullable="false" />
+    <Property Name="is_present" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="coaches">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="members">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="section_id" Type="int" />
+  </EntityType>
+  <EntityType Name="reports">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="period_start" Type="date" Nullable="false" />
+    <Property Name="period_end" Type="date" Nullable="false" />
+    <Property Name="parameters" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="schedules">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="section_id" Type="int" Nullable="false" />
+    <Property Name="training_date" Type="date" Nullable="false" />
+    <Property Name="training_time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="training_type" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sections">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="coach_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_achievements_members">
+    <End Role="members" Type="Self.members" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="achievements" Type="Self.achievements" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="achievements">
+        <PropertyRef Name="member_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_admins_users">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="admins" Type="Self.admins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="admins">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_attendances_members">
+    <End Role="members" Type="Self.members" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="attendances" Type="Self.attendances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="members">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="attendances">
+        <PropertyRef Name="member_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_attendances_schedules">
+    <End Role="schedules" Type="Self.schedules" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="attendances" Type="Self.attendances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="schedules">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="attendances">
+        <PropertyRef Name="schedule_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_coaches_users">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="coaches" Type="Self.coaches" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="coaches">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_members_sections">
+    <End Role="sections" Type="Self.sections" Multiplicity="0..1" />
+    <End Role="members" Type="Self.members" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sections">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="members">
+        <PropertyRef Name="section_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_members_users">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="members" Type="Self.members" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="members">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_schedules_sections">
+    <End Role="sections" Type="Self.sections" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="schedules" Type="Self.schedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sections">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="schedules">
+        <PropertyRef Name="section_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_sections_coach">
+    <End Role="coaches" Type="Self.coaches" Multiplicity="1" />
+    <End Role="sections" Type="Self.sections" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="coaches">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sections">
+        <PropertyRef Name="coach_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ModelDBContainer">
+    <EntitySet Name="achievements" EntityType="Self.achievements" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="admins" EntityType="Self.admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="attendances" EntityType="Self.attendances" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="coaches" EntityType="Self.coaches" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="members" EntityType="Self.members" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="reports" EntityType="Self.reports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="schedules" EntityType="Self.schedules" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sections" EntityType="Self.sections" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_achievements_members" Association="Self.fk_achievements_members">
+      <End Role="members" EntitySet="members" />
+      <End Role="achievements" EntitySet="achievements" />
+    </AssociationSet>
+    <AssociationSet Name="fk_admins_users" Association="Self.fk_admins_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="admins" EntitySet="admins" />
+    </AssociationSet>
+    <AssociationSet Name="fk_attendances_members" Association="Self.fk_attendances_members">
+      <End Role="members" EntitySet="members" />
+      <End Role="attendances" EntitySet="attendances" />
+    </AssociationSet>
+    <AssociationSet Name="fk_attendances_schedules" Association="Self.fk_attendances_schedules">
+      <End Role="schedules" EntitySet="schedules" />
+      <End Role="attendances" EntitySet="attendances" />
+    </AssociationSet>
+    <AssociationSet Name="fk_coaches_users" Association="Self.fk_coaches_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="coaches" EntitySet="coaches" />
+    </AssociationSet>
+    <AssociationSet Name="fk_members_sections" Association="Self.fk_members_sections">
+      <End Role="sections" EntitySet="sections" />
+      <End Role="members" EntitySet="members" />
+    </AssociationSet>
+    <AssociationSet Name="fk_members_users" Association="Self.fk_members_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="members" EntitySet="members" />
+    </AssociationSet>
+    <AssociationSet Name="fk_schedules_sections" Association="Self.fk_schedules_sections">
+      <End Role="sections" EntitySet="sections" />
+      <End Role="schedules" EntitySet="schedules" />
+    </AssociationSet>
+    <AssociationSet Name="fk_sections_coach" Association="Self.fk_sections_coach">
+      <End Role="coaches" EntitySet="coaches" />
+      <End Role="sections" EntitySet="sections" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
