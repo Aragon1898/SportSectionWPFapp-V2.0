@@ -1,0 +1,24 @@
+@startuml
+
+title Составление расписания (Тренер)
+
+actor "Тренер" as Coach
+participant "Система" as System
+database "База данных" as DB
+
+Coach -> System: Запрос на создание расписания
+System -> Coach: Отображение календаря и форм
+Coach -> System: Указание даты, времени, типа тренировки
+System -> DB: Проверка доступности времени
+DB --> System: Результат проверки
+alt Время свободно
+    System -> DB: Сохранение расписания
+    DB --> System: ID записи
+    System -> Coach: Уведомление об успешном создании
+    System -> DB: Обновление общего расписания
+else Конфликт времени
+    System -> Coach: Ошибка: "Время занято"
+    Coach -> System: Корректировка данных
+end
+
+@enduml
